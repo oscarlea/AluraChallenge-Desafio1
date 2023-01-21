@@ -1,0 +1,350 @@
+*{
+    font-family: Inter, sans-serif ;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body{
+    background: #E5E5E5;
+    max-width: 1400px;
+    max-height: 1000px;
+    min-width: 320px; 
+    margin: 0px auto; 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #F3F5FC;
+}
+.containerLogo{
+    margin: 40px 40px 0px;
+    position: absolute;
+}
+
+.containerLogo img:last-child{
+    display: none;
+}
+
+.mainContainer {
+    background-color: #F3F5FC;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+}
+
+.sectionLeft {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 70%;
+}
+
+.inputContainer {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.textareaInput{
+    background-color: #F3F5FC;  
+    border: none;
+    outline: 0;
+    color: #0A3871;
+    text-transform: lowercase;
+    resize: none;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    margin: 90px auto 20px;
+    flex: 0 1 73%;
+}
+
+.textareaInput::placeholder{
+    font-family: Inter, sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.informacion{
+    margin: 10px 14% 10px;    
+    color: #495057;
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    font-family:Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #343A40;
+    flex: 0 1 auto;
+}
+
+.material-icons.md-18 {font-size: 18px; vertical-align: text-bottom;}
+.material-icons.md-24 { font-size: 24px; }
+
+.buttonLeft{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex: 0 1 auto;
+}
+
+.btnDesencriptar{
+    background: #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px; 
+    margin: 0px 15px 0px; 
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 328px;
+}
+
+.btnEncriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px; 
+    margin: 0px 15px 0px; 
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 328px;
+}
+
+.sectionRight {
+    background-image: url("imagenes/Muneco.png"); 
+    background-size: 336px 304px;
+    background-repeat: no-repeat;
+    background-position: 50% 30%; 
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.20);
+    border-radius: 32px;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 29%;
+    display: flex;
+}
+
+.outputContainer {
+
+    margin: 10px;
+    display: flex; 
+    flex: 2 1 auto;
+    visibility: hidden;  
+    margin-bottom: auto;
+}
+
+.textareaOutput{
+    border: none;
+    outline: 0;            
+    color: #0A3871;
+    resize: none;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #0A3871;
+    width: 85%;
+    margin: 5px;
+    flex: 1 1 auto;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    margin: 0px 26px 35%;
+}
+
+.text1 {
+    width: auto;
+    margin: 10px;
+    text-align: center;    
+    font-family: Inter, sans-serif; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+}
+.text2 {
+    width: auto;
+    margin: 10px;
+    text-align: center;    
+    font-family: Inter, sans-serif;  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #343A40;
+}
+
+.buttonRight {
+    margin: 10px;
+    display: none;
+    flex: 0 1 auto;
+}
+
+.btnCopiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin: 0px auto 0px; 
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 328px;
+}
+
+footer{
+    flex: 0 1 auto;
+}
+
+.copyright{
+    margin:20px;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: #343A40;
+}    
+
+@media screen and (max-width:375px) {
+
+    body{
+        background: #F3F5FC;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .containerLogo{
+        margin: 0px;
+    }
+
+    .containerLogo img:first-child{
+        display: none;
+    }
+
+    .containerLogo img:last-child{
+        display:block;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .mainContainer {
+        flex-direction: column;
+        flex: 1 1 900px;
+    }
+
+    .informacion{
+        font-size: 12px;
+        padding: 0px;
+        margin-left: 25px;
+    }
+
+    .sectionLeft {
+        margin: 0px;
+    }
+
+    .sectionRight {
+        background-image: none; 
+    }
+
+    .textareaInput{
+        width: 343px; 
+        height: 285px;
+        margin: 25% auto 10px;
+    }
+
+    .textareaOutput{
+        height: 285px;
+    }
+
+    .textos{
+        position: absolute;
+    }
+
+    .btnEncriptar, .btnDesencriptar, .btnCopiar{
+        font-size: 16px;
+        margin: 10px auto 0px; 
+        height: 67px;
+    }
+
+    .buttonLeft{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    body{
+        background: #F3F5FC;
+    }
+
+    .containerLogo{
+        margin: 0px;
+    }
+
+    .containerLogo img:first-child{
+        display: none;
+    }
+
+    .containerLogo img:last-child{
+        display:block;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .mainContainer {
+        flex-direction: column;
+    }
+
+    .informacion{
+        margin-left: 33px;
+    }
+
+    .sectionRight {
+        background-image: none; 
+    }
+
+    .textareaOutput, .textareaInput{
+        height: 350px;
+    }
+
+    .textos{
+        position: absolute;
+        left: 0; 
+        right: 0; 
+        margin: 20px auto;
+        width: 70%;
+    }
+
+    .btnCopiar{
+        flex-direction: column;
+        margin: 0px auto 0px; 
+    }
+}

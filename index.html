@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <title>Alura Encriptador</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="containerLogo">
+                <img src="imagenes/Logo.png" alt="Logo Alura">
+                <img src="imagenes/Top.png" alt="Logo Alura">
+            </div>
+        </header>
+
+        <div class="mainContainer">
+
+            <div class="sectionLeft">
+                <div class="inputContainer">
+                    <textarea class="textareaInput" id="textareaInput" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+                <div class="informacion">
+                    <span class="material-icons md-18">error</span>
+                     Solo letras minúsculas y sin acentos.
+                </div>  
+                <div class="buttonLeft">
+                    <button type="button" class="btnEncriptar" id="btnEncriptar">Encriptar</button>
+                    <button type="button" class="btnDesencriptar" id="btnDesencriptar">Desencriptar</button>
+                </div>
+            </div>
+
+            <div class="sectionRight" id="sectionRight">
+                <div class="outputContainer" id="outputContainer">
+                    <textarea class="textareaOutput"></textarea>    
+                </div> 
+                <div class="textos" id="textos">
+                    <div class="text1">Ningún mensaje fue encontrado</div>
+                    <div class="text2">Ingresa el texto que desees encriptar o desencriptar..</div>
+                </div>
+                <div class="buttonRight">
+                    <button type="button" class="btnCopiar" id="btnCopiar">Copiar</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <p class="copyright">&copy Copyright Oscar J. Leañez - 2023</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
